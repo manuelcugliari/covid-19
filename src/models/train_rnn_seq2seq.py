@@ -136,8 +136,7 @@ def core_RNN_seq2seq(df_master):
     # The dimensionality of the output at each time step. In this case a 1D signal.
     num_output_features = 1
 
-    # There is no reason for the input sequence to be of same dimension as the output sequence. For instance,
-    # using 3 input signals: consumer confidence, inflation and house prices to predict the future house prices.
+    # There is no reason for the input sequence to be of same dimension as the output sequence.
     loss = "mse"  # Other loss functions are possible, see Keras documentation.
 
     # Regularisation isn't really needed for this application
@@ -213,7 +212,7 @@ def core_RNN_seq2seq(df_master):
     decoder_outputs = decoder_outputs_and_states[0]
 
     # Apply a dense layer with linear activation to set output to correct dimension
-    # and scale (tanh is default activation for GRU in Keras, our output sine function can be larger then 1)
+    # and scale
     decoder_dense = keras.layers.Dense(num_output_features,
                                        activation='linear',
                                        kernel_regularizer=regulariser,

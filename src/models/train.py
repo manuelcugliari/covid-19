@@ -33,7 +33,7 @@ def _get_args():
                              'isolamento_domiciliare, totale_attualmente_positivi, nuovi_attualmente_positivi, '
                              'dimessi_guariti, deceduti, totale_casi, tamponi')
 
-    parser.add_argument('--model', type=str, default='arima',
+    parser.add_argument('--model', type=str, default='prophet',
                         help='model to use, arima or RNN_seq2seq or prophet or regression')
 
     parser.add_argument('--initial_lrate', type=float, default=1E-03,
