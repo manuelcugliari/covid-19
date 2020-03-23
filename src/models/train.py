@@ -43,7 +43,7 @@ def _get_args():
     parser.add_argument('--batch_size', type=int, default=32,
                         help='batch size')
 
-    parser.add_argument('--lag_observations', type=float, default=2,
+    parser.add_argument('--lag_observations', type=float, default=5,
                         help='the number of lag observations included in the models, also called the lag order')
     parser.add_argument('--degree_differencing', type=int, default=2,
                         help='the number of times that the raw observations are differenced, also called the degree '

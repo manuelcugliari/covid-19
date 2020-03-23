@@ -15,3 +15,4 @@ pystan==2.19.1.1
 fbprophet==0.6
 plotly==4.5.4
 dtw-python==1.0.5
+fastdtw==0.3.4

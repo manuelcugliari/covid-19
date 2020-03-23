@@ -71,6 +71,7 @@ The code is organized following the [Cookiecutter Data Science](https://drivenda
 │   │   ├── explore.py            <- Make some data exploration (e.g. plot and dimension time series autocorrelation)
 │   │   ├── prophet.py            <- Runs predictions with Trophet
 │   │   ├── regression.py         <- Runs predictions with MLPRegressor
+│   │   ├── stannard.py           <- Stannard nonlinear equations fitting and forecasting
 │   │   ├── train.py              <- Trains the model Arima or RNNseq2seq or Trophet or MLPRegressor
 │   │   ├── train_arima.py        <- Trains the model Arima
 │   │   ├── train_RNNseq2seq.py   <- Trains the model RNNseq2seq
@@ -112,6 +113,12 @@ The code is organized following the [Cookiecutter Data Science](https://drivenda
   - Run `train.py --country --region --dimension --model --changepoint_prior_scale --periods`, to train specific Prophet model on country/region dimension:
   ```
   python train.py --country --region --dimension --model --changepoint_prior_scale --periods
+
+  ```
+
+  - Run `stannard.py`, to compute Italy forecast based on Stannard model:
+  ```
+  python stannard.py
 
   ```
 

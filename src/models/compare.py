@@ -58,18 +58,18 @@ if __name__ == '__main__':
                     or dimension_it == 'totale_casi':
 
                 if dimension_it == 'totale_casi':
-                    ax.plot(df_italy['data'], dimension_it_values, "x--r", linewidth=0.5, label='totale_casi Italy')
+                    ax.plot(df_italy['data'], dimension_it_values, linewidth=1, label='totale_casi Italy')
                     for (dimension_wo, dimension_wo_values) in df_world.iteritems():
                         if dimension_wo == 'Confirmed':
-                            ax.plot(df_world['ObservationDate'] + timedelta(days=33), dimension_wo_values, "x--b",
+                            ax.plot(df_world['ObservationDate'] + timedelta(days=33), dimension_wo_values,
                                     linewidth=0.5,
                                     label='totale_casi ' + country)
 
                 if dimension_it == 'deceduti':
-                    ax.plot(df_italy['data'], dimension_it_values, "x--r", linewidth=0.5, label='deceduti Italy')
+                    ax.plot(df_italy['data'], dimension_it_values, linewidth=1, label='deceduti Italy')
                     for (dimension_wo, dimension_wo_values) in df_world.iteritems():
                         if dimension_wo == 'Deaths':
-                            ax.plot(df_world['ObservationDate'], dimension_wo_values, "x--b", linewidth=0.5,
+                            ax.plot(df_world['ObservationDate'] + timedelta(days=33), dimension_wo_values, linewidth=0.5,
                                     label='deceduti ' + country)
 
                 if nn == len(axs) - 1:
