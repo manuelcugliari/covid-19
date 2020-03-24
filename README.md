@@ -1,10 +1,10 @@
 # COVID-19 pandemic predictor
 
-This repository contains AI algos models for COVID-19 pandemic precition. 
+This repository contains statistic models and ML algor for COVID-19 pandemic precition. 
 
-The aim of the project is to provide an evolutable AI stack for COVID-19 pandemic precition and show the first results despite the limited public data available.
+The aim of the project is to provide an evolutable statistic and ML stack for COVID-19 pandemic precition and show the first results despite the limited public data available.
 
-The models used are ARIMA, RNN seq2seq, Prophet forecast and MLPRegressor. I use Keras and Tensorflow (tf-nightly-build).
+The models used are ARIMA, RNN seq2seq, Prophet forecast, MLPRegressor and Stannard growth curve. I use Keras and Tensorflow (tf-nightly-build).
 
 ## Setup
 
