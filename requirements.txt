@@ -1,6 +1,6 @@
 Keras==2.3.1
 matplotlib==3.1.2
-numpy==1.17.4
+numpy==1.22.0
 pandas==0.25.3
 python-dateutil==2.8.1
 scikit-learn==0.22.1
