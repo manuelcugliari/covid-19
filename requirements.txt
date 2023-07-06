@@ -9,7 +9,7 @@ tqdm==4.40.2
 googlemaps==2.5.1
 tf-nightly==2.2.0-dev20200313
 protobuf==3.8.0
-scipy==1.4.1
+scipy==1.10.0
 statsmodels==0.11.1
 pystan==2.19.1.1
 fbprophet==0.6
